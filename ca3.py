@@ -20,7 +20,7 @@ students = {
 
 def add_student_grade(student_id, subject, grade):
     try:
-        if not isinstance(grade, (int, float)):
+        if not (grade, (int, float)):
             raise TypeError("Grade must be an integer or float")
         if student_id not in students:
             students[student_id] = {}
